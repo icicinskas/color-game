@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monterrat;
+    background: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+    background: steelblue;
+}
+
+h1 #colorDisplay {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+
+#stripe button {
+    border: 0;
+    background: none;
+    color: steelblue;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+#stripe button:hover {
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
+}
+
+.selected {
+    background-color: steelblue !important;
+    color: white !important;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 630px;
+    margin: 20px auto;
+}
+
+.square {
+    width: 180px;
+    height: 180px;
+    background: purple;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.square:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media (max-width: 630px) {
+    #container {
+        max-width: 400px;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
